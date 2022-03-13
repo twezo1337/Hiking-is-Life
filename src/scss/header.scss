@@ -1,0 +1,264 @@
+.header {
+     width: 100%;
+     height: 214px;
+     margin-top: 68px;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     @media (max-width: $md3+px) {
+          display: block;
+          text-align: center;
+          margin-top: 20px;
+          height: 270px;
+     }
+     &__logo {
+          width: 200px;
+          height: 200px;
+     }
+     &__center__content {
+          text-align: center;
+     }
+     &__slogan {
+          font-family: Caveat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 100%;
+          color: #112645;
+     }
+     &__tyr {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 100%;
+          color: #112645;
+          margin-top: 15px;
+     }
+     &__contacts {
+          text-align: right;
+          @media (max-width: $md3+px) {
+               display: none;
+          }
+          & p {
+               font-style: normal;
+               font-weight: 300;
+               font-size: 20px;
+               line-height: 28px;
+               color: #112645;
+          }
+     }
+     &__soc {
+          & img {
+               padding-left: 10px;
+               width: 32px;
+               height: 32px;
+          }
+     }
+}
+.application {
+     width: 250px;
+     height: 60px;
+     border-radius: 50px;
+     margin-top: 15px;
+     background-color: #009BCC;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 20px;
+     line-height: 29px;
+     color: #FFFFFF;
+     transition: all 0.3s ease;
+     @media (min-width: $md3+px) { 
+          &:hover {
+               box-shadow: 0px 0px 20px 15px rgba(0, 155, 204, 0.25);
+          }
+     }
+}
+
+.menu {
+     &__body {
+          margin-top: 79px;
+          display: flex;
+          @media (max-width: $md2+px) {
+               margin-top: 83px;
+          }
+          @media (max-width: $md3+px) {
+               display: none;
+          }
+     }
+     &__drop__content {
+          width: 125px;
+          height: 50px;
+          &:hover .menu__list {
+               background-color: #112645;
+               color:#FFFFFF;
+          }
+          @media (max-width: $md2+px) {
+               width: 115px;
+               height: 45px;
+          }
+          @media (max-width: $md3+px) {
+               width: 235px;
+               height: 65px;
+          }
+     }
+     &__list {
+          width: 125px;
+          height: 50px;
+          background: #FFFFFF;
+          border: 1px solid #112645;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 100%;
+          text-align: center;
+          color: #112645;
+          transition: all 0.5s ease;
+          &:hover {
+               background-color: #112645;
+               color:#FFFFFF;
+          }
+          @media (max-width: $md2+px) {
+               width: 115px;
+               height: 45px;
+          }
+          @media (max-width: $md3+px) {
+               width: 235px;
+               height: 65px;
+          }
+          &__drop {
+               display: none;
+               position: absolute;
+               background-color: white;
+               min-width: 125px;
+               box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+               z-index: 1;
+               text-align: center;
+               @media (max-width: $md2+px) {
+                    min-width: 115px;
+               }
+               @media (max-width: $md3+px) {
+                    min-width: 235px;
+               }
+               & a {
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 100%;
+                    color: #112645;
+                    padding: 10px;
+                    transition: all 0.2s ease;
+                    @media (min-width: $md3+px) { 
+                         &:hover {
+                              font-weight: 500;
+                         }
+                    }
+               }
+          }
+     }
+}
+.drop_show {
+     display: block;
+}
+.icon__menu {
+     display: none;
+     @media (max-width:$md3+px) {
+          position: fixed;
+          right: 10px;
+          top: 25px;
+          width: 30px;
+          height: 18px;
+          display: block;
+          cursor: pointer;
+          z-index: 10001;
+          span {
+               transition: all 0.4s ease 0s;
+               top: calc(50% - 1px);
+               left: 0px;
+               position: absolute;
+               width: 100%;
+               height: 2px;
+               background-color: #8b8b8b;
+               &:first-child {
+                    top: 0px;
+               }
+               &:last-child {
+                    top: auto;
+                    bottom: 0px;
+               }
+          }
+          &._active {
+               span {
+                    transform: scale(0);
+                    &:first-child {
+                         transform: rotate(-45deg);
+                         top: calc(50% - 1px);
+                    }
+                    &:last-child {
+                         transform: rotate(45deg);
+                         bottom: calc(50% - 1px);
+                    }
+               }
+          }
+     }
+}
+
+.burger__content {
+     display: none;
+     @media (max-width:$md3+px) {
+          display: block;
+          position: fixed;
+          z-index: 10000;
+          width: 50%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          overflow: auto;
+          padding: 60px 10px 30px 10px;
+          background: rgba(255, 255, 255, 1);
+          transform: translate(150%, 0px);
+          transition: transform 0.8s ease 0s;
+          @media (max-width:$md4+px) { 
+               width: 100%;
+          }
+          &._active {
+               transform: translate(0%, 0px);
+               background: rgba(255, 255, 255, 0.9);
+               @media (max-width:$md4+px) { 
+                    transform: translate(0%, 0px);
+               }
+          }
+     }
+     &__menu {
+          display: none;
+          @media (max-width:$md3+px) { 
+               width: 235px;
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+          }
+     }
+     &__contacts {
+          display: none;
+          @media (max-width:$md3+px) { 
+               display: block;
+               padding-top: 35px;
+          }
+          & p {
+               font-style: normal;
+               font-weight: 300;
+               font-size: 22px;
+               line-height: 34px;
+               color: #112645;
+          }
+     }
+}
+.burger__soc {
+     & img {
+          padding-left: 15px;
+          width: 42px;
+          height: 42px;
+     }
+}

@@ -1,0 +1,356 @@
+.route__card {
+     display: flex;
+     margin-top: 60px;
+     height: auto;
+     @media (max-width: $md3+px) {
+          display: block;
+     }
+     &__name {
+          width: 65%;
+          max-height: 2300px;
+          padding-left: 65px;
+          padding-right: 85px;
+          padding-top: 35px;
+          padding-bottom: 30px;
+          @media (max-width: $md3+px) {
+               width: 100%;
+          }
+          @media (max-width: $md4+px) {
+               padding-top: 40px;
+               padding-left: 30px;
+               padding-right: 40px;
+          }
+          &__title {
+               font-style: normal;
+               font-weight: 800;
+               font-size: 28px;
+               line-height: 38px;
+               color: #FFFFFF;
+               @media (max-width: $md3+px) {
+                    font-size: 26px;
+                    line-height: 32px;
+               }
+               @media (max-width: $md4+px) {
+                    font-size: 22px;
+                    line-height: 28px;
+               }
+          }
+          &__main {
+               font-style: normal;
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 22px;
+               text-align: justify;
+               letter-spacing: 0.1em;
+               color: #FFFFFF;
+               margin-top: 50px;
+               @media (max-width: $md2+px) {
+                    margin-top: 30px;
+               }
+               @media (max-width: $md4+px) {
+                    font-size: 14px;
+                    line-height: 20px;
+               }
+          }
+     }
+     &__specs {
+          width: 35%;
+          max-height: 2300px;
+          background: #EEEEEE;
+          padding-left: 50px;
+          padding-right: 50px;
+          padding-top: 20px;
+          padding-bottom: 30px;
+          @media (max-width: $md3+px) {
+               width: 100%;
+               text-align: center;
+          }
+          @media (max-width: $md4+px) {
+               padding-left: 30px;
+               padding-right: 40px;
+          }
+          &__dates {
+               border: 1px solid #000000;
+               max-width: 340px;
+               max-height: 150px;
+               display: block;
+               text-align: center;
+               font-style: normal;
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 22px;
+               letter-spacing: 0.1em;
+               color: #112645;
+               padding-top: 20px;
+               padding-bottom: 20px;
+               @media (max-width: $md3+px) {
+                    margin-right: auto;
+                    margin-left: auto;
+               }
+               @media (max-width: $md4+px) {
+                    font-size: 14px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+               }
+          }
+          &__main {
+               font-style: normal;
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 20px;
+               letter-spacing: 0.1em;
+               color: #112645;
+               margin-top: 20px;
+               @media (max-width: $md4+px) {
+                    font-size: 14px;
+                    line-height: 18px;
+               }
+          }
+          &__btn {
+               max-width: 265px;
+               height: 65px;
+               font-style: normal;
+               font-weight: bold;
+               font-size: 16px;
+               line-height: 26px;
+               letter-spacing: 0.1em;
+               color: #FFFFFF;
+               background-color: #112645;
+               margin-top: 30px;
+               padding-left: 60px;
+               padding-right: 60px;
+               transition: all 0.3s ease;
+               @media (max-width: $md4+px) {
+                    font-size: 14px;
+               }
+               &:hover {
+                    box-shadow: 0px 0px 35px 20px rgba(17, 38, 69, 0.25);
+               }
+          }
+     }
+}
+
+.days__cards {
+     width: 100%;
+     max-height: 25000px;
+     margin-top: 50px; 
+     display: block;
+     @media (max-width: $md3+px) {
+          width: 100%;
+          margin-top: 15px;
+     }
+     &__content {
+          display: flex;
+          margin-bottom: -200px;
+          @media (max-width: $md3+px) {
+               margin-bottom: 0px;
+          }
+     }
+     &__card {
+          width: 48%;
+          max-height: 2800px;
+          border-radius: 85px;
+          border: 1px solid #112645;
+          padding-left: 50px;
+          padding-right: 60px;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          background-image: url(../src/img/about_routes_cards/card.jpg);
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          @media (max-width: $md3+px) {
+               width: 100%;
+               margin-top: 35px;
+          }
+          @media (max-width: $md4+px) {
+               border-radius: 40px;
+               padding-right: 20px;
+               padding-left: 20px;
+               padding-top: 35px;
+          }
+          & h3 {
+               font-style: normal;
+               font-weight: 800;
+               font-size: 20px;
+               line-height: 16px;
+               letter-spacing: 0.1em;
+               color: white;
+               margin-bottom: 30px;
+               @media (max-width: $md4+px) {
+                    font-size: 18px;
+                    line-height: 14px;
+               }
+          }
+          &__desc {
+               font-style: normal;
+               font-weight: 500;
+               font-size: 14px;
+               line-height: 16px;
+               text-align: justify;
+               letter-spacing: 0.1em;
+               color: white;
+               margin-top: 30px;
+          }
+          &__specs {
+               & p {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                    color: white;
+               }
+          }
+     }
+}
+.map__img__left {
+     width: 50%;
+     max-height: 2800px;
+     background-image: url(../src/img/about_routes_cards/1.png);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     @media (max-width: $md3+px) {
+          display: none;
+     }
+}
+.map__img__right {
+     width: 50%;
+     max-height: 2800px;
+     background-image: url(../src/img/about_routes_cards/2.png);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     @media (max-width: $md3+px) {
+          display: none;
+     }
+}
+.non__img {
+     width: 50%;
+     max-height: 2800px;
+     @media (max-width: $md3+px) {
+          display: none;
+     }
+}
+
+.route__information {
+     margin-top: 250px;
+     @media (max-width: $md3+px) {
+          margin-top: 30px;
+     }
+     & h2 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 38px;
+          color: #112645;
+          @media (max-width: $md3+px) {
+               font-size: 28px;
+          }
+          @media (max-width: $md4+px) {
+               font-size: 24px;
+          }
+     }
+     &__main {
+          margin-top: 30px;
+          & p {
+               font-style: normal;
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 22px;
+               text-align: justify;
+               letter-spacing: 0.07em;
+               color: #112645;
+               @media (max-width: $md4+px) {
+                    font-size: 14px;
+                    line-height: 20px;
+               }
+          }
+          & a {
+               color: #009BCC;
+               font-weight: 500;
+          }
+     }
+}
+
+.gallery-box{
+     width: 100%;
+     padding: 10px 0 0;
+     margin-top: 50px;
+     padding-bottom: 25px;
+     @media (max-width: $md4+px) {
+          margin-top: 20px;
+     }
+     & h2 {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          color: #112645;
+          @media (max-width: $md3+px) {
+               font-size: 28px;
+          }
+          @media (max-width: $md4+px) {
+               font-size: 24px;
+          }
+     }
+   }
+   .view{
+     position:relative;
+     margin:0 0 5px;
+     margin-top: 45px;
+   }
+   .big-image img{
+     display:block;
+     width:100%;
+     height:100%;
+     box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.25);
+     transition: all 0.3s ease;
+   }
+   .prev, .next{
+     position:absolute;  
+     width:40px;
+     height:40px;
+   }
+   .prev{
+     bottom:40px;
+     left:20px;
+     background:url(../src/img/controls.png) no-repeat 0 0;
+   }
+   .next{
+     bottom:40px;
+     right:20px;
+     background:url(../src/img/controls.png) no-repeat -48px 0;
+   }
+    
+   .thumbnails{
+     width:100%;
+     display: flex;
+     align-items: flex-start;
+     flex: 0 0 90%;
+     overflow: auto;
+   }
+   .thumbnails a{
+     float:left;
+     margin:0 5px 0 0;
+   }
+   .thumbnails a img{
+     width:142px;
+     height:80px;
+     border: 2px solid transparent;
+     display:block;
+     transition: all 0.3s ease;
+     object-fit: cover;
+     background-size: cover;
+     @media (max-width: $md3+px) {
+          width: 122px;
+          height: 65px;
+     }
+     @media (max-width: $md4+px) {
+          width: 100px;
+          height: 55px;
+     }
+   }
+   .thumbnails .active img{
+     border-color:#112645;
+   }

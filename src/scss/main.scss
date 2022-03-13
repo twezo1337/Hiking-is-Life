@@ -1,0 +1,46 @@
+//Шрифты ==========================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+//Шрифт по умолчанию ==============================================================================
+$fontFamily: 'Bitter', serif;
+
+//Иконочные шрифты ================================================================================
+
+//Переменные ======================================================================================
+$minWidth: 320px;
+$maxWidth: 1170;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md2: 1199;
+$md3: 991.98;
+$md4: 767.98;
+$md5: 479.98;
+
+//Стили отдельных страниц =========================================================================
+@import "default.scss";
+
+
+body {
+     font-family: $fontFamily;
+     -webkit-tap-highlight-color: transparent;
+}
+
+._container {
+     max-width: $maxWidthContainer+px;
+     margin: 0 auto;
+     position: relative;
+     @media (max-width: $md1+px) {
+          max-width: 1170px;
+          padding: 0 10px;
+     }
+     @media (max-width: $md2+px) {
+          max-width: 970px;
+          padding: 0 10px;
+     }
+     @media (max-width: $md3+px) {
+          max-width: none;
+          padding: 0 10px;
+     }
+}

@@ -1,0 +1,16 @@
+.development {
+     text-align: center;
+     padding-top: 150px;
+     padding-bottom: 150px;
+     font-family: 'Bitter', serif;
+     font-style: normal;
+     font-weight: 900;
+     font-size: 46px;
+     color: rgb(151, 151, 151);
+     @media (max-width: $md3+px) {
+          font-size: 32px;
+     }
+     @media (max-width: $md4+px) {
+          font-size: 28px;
+     }
+}

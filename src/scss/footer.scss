@@ -1,0 +1,108 @@
+.background {
+     bottom: 0px;
+     width: 100%;
+     object-fit: cover;
+     background-size: cover;
+}
+.background__mainpage {
+}
+
+.footer {
+     height: 210px;
+     width: 100%;
+     @media (max-width: $md3+px) {
+          height: 230px;
+     }
+     @media (max-width: $md4+px) {
+          height: 400px;
+     }
+     &__content {
+          width: 100%;
+          display: flex;
+          padding-top: 25px;
+          justify-content: space-between;
+          @media (max-width: $md4+px) {
+               display: block;
+               text-align: center;
+          }
+     }
+     &__logo {
+          width: 181px;
+          height: 181px;
+          @media (max-width: $md2+px) {
+               width: 151px;
+               height: 151px;
+          }
+          @media (max-width: $md3+px) {
+               width: 181px;
+               height: 181px;
+          }
+          @media (max-width: $md4+px) {
+               display: none;
+          }
+     }
+     &__menu {
+          display: flex;
+          padding-top: 60px;
+          @media (max-width: $md3+px) {
+               display: block;
+               padding: 0px;
+               text-align: center;
+          }
+          &__link {
+               font-style: normal;
+               margin-left: 25px;
+               font-weight: 500;
+               font-size: 14px;
+               line-height: 20px;
+               color: #112645;
+               transition: all 0.2s ease;
+               @media (min-width: $md2+px) {
+                    &:hover {
+                         font-weight: 600;
+                    }
+               }
+               @media (max-width: $md3+px) {
+                    padding-top: 15px;
+               }
+               @media (max-width: $md4+px) {
+                    margin-left: 0px;
+               }
+               @media (max-width: $md5+px) {
+                    font-size: 16px;
+               }
+          }
+     }
+     &__contacts {
+          text-align: right;
+          @media (max-width: $md4+px) {
+               text-align: center;
+          }
+          @media (max-width: $md4+px) {
+               margin-top: 20px;
+          }
+          & p {
+               font-style: normal;
+               font-weight: 300;
+               font-size: 20px;
+               line-height: 34px;
+               color: #112645;
+               @media (max-width: $md4+px) {
+                    font-size: 22px;
+               }
+          }
+     }
+}
+.privacy__policy {
+     Position:absolute;
+     top:100%;
+     margin-top: 25px;
+     left:50%;
+     transform:translate(-50%,-50%);
+     font-style: normal;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 19px;
+     letter-spacing: 0.3em;
+     color: #000000;
+}
